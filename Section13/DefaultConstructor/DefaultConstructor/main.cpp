@@ -22,7 +22,7 @@ public:
     }
     Player()
     {
-        name = "None";
+        name = "none";
         health = 100;
         xp = 3;
     }
