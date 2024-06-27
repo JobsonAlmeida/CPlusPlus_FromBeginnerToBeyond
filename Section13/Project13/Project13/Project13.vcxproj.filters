@@ -24,5 +24,8 @@
     <ClCompile Include="ShallowCopy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DeepCopy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
