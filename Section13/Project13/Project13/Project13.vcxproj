@@ -128,13 +128,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Const.cpp" />
     <ClCompile Include="CopyConstructor.cpp" />
     <ClCompile Include="DeepCopy.cpp" />
     <ClCompile Include="LvalueAndRvalue.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainPlayer.cpp" />
     <ClCompile Include="MoveConstructor.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="ShallowCopy.cpp" />
     <ClCompile Include="ThisPointer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Player.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
