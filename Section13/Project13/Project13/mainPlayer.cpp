@@ -48,5 +48,5 @@ int main()
     display_active_players();*/
 
     return 0;
-}
+ }
 
