@@ -3,26 +3,33 @@
 #include <string>
 #include <vector>
 
+enum class Rating {
+	Rating_G,
+	Rating_PG,
+	Rating_PG13,
+	Rating_R
+};
+
 class Movie {
 
-	std::string movie;
-	std::string rating;
+	friend class Movies;
+
+	std::string name;
+	Rating rating;
 	int watched;
 
-	std::string ratingG;
-	std::string ratingPG;
-	std::string ratingPG_13;
-	std::string ratingR;
+	Movie(std::string name, Rating rating, int watched);
 
 };
 
 class Movies {
 
+private:
 	std::vector<Movie> movies;
 
-	Movie* createMovie()
-	{
-		Movie* movie = new Movie();
-		return movie;
-	}
+public:
+	Movie* createMovie(std::string name, Rating rating = Rating::Rating_R, int watched = 0);
+	bool addMovie(Movie &movie);
 };
+
+
