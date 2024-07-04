@@ -30,12 +30,20 @@ Mystring::Mystring(const Mystring& source) : str{ nullptr }
 	std::strcpy(str, source.str);
 }
 
+Mystring::Mystring(Mystring &&source):str(source.str)
+{
+	source.str = nullptr;
+	std::cout << "Move constructor used" << std::endl;
+
+}
+
 //Remember, this you're responsible for de-allocating the memory that you allocate.
 Mystring::~Mystring()
 {
 	delete [] str;
 }
 
+//Copy assignment operator
 Mystring& Mystring::operator=(const Mystring& rhs)
 {
 	std::cout << "Copy assignment" << std::endl;
@@ -54,6 +62,25 @@ Mystring& Mystring::operator=(const Mystring& rhs)
 	return *this;
 
 }
+
+//Move assignment
+//Mystring& Mystring::operator=(Mystring&& rhs)
+//{
+//	std::cout << "Using move assignment" << std::endl;
+//
+//	if (this == &rhs)
+//	{
+//		return *this;
+//	}
+//
+//	delete[] str;
+//
+//	str = rhs.str;
+//
+//	rhs.str = nullptr;
+//
+//	return *this;
+//}
 
 void Mystring::display() const
 {

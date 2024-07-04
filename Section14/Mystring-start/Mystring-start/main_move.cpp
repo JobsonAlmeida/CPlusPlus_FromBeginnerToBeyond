@@ -7,8 +7,8 @@ using namespace std;
 int main()
 {
 	Mystring a{ "Hello" };
-	Mystring b;
-	b = a;
+	a = Mystring{"Hola"};
+	a = "Bonjour";
 
-
+	return 0;
 }

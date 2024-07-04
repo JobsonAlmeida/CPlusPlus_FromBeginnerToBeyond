@@ -8,9 +8,12 @@ public:
 	Mystring();
 	Mystring(const char* s);
 	Mystring(const Mystring& source);
+	Mystring(Mystring &&source);
+
 	~Mystring();
 
-	Mystring &operator=(const Mystring& rhs);
+	Mystring& operator=(const Mystring& rhs);
+	/*Mystring& operator=(Mystring&& rhs);*/
 
 	void display() const;
 	int get_length() const;
