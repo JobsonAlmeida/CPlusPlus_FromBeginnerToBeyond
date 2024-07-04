@@ -27,6 +27,9 @@
     <ClCompile Include="main_move.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="main_operators.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Mystring.h">
