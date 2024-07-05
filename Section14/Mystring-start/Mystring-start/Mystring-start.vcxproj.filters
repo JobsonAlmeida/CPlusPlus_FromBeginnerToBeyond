@@ -36,6 +36,9 @@
     <ClCompile Include="main_overloadedOperatorsAsGlobalfunctions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="main_insertion_extraction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Mystring.h">

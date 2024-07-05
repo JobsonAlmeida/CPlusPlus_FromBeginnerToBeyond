@@ -130,6 +130,7 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="main_copy.cpp" />
+    <ClCompile Include="main_insertion_extraction.cpp" />
     <ClCompile Include="main_move.cpp" />
     <ClCompile Include="main_operators.cpp" />
     <ClCompile Include="main_overloadedOperatorsAsGlobalfunctions.cpp" />
