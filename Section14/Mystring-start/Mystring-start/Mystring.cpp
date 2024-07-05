@@ -129,3 +129,22 @@ const char* Mystring::get_str() const
 {
 	return str;
 }
+
+//overloaded insertion operator
+std::ostream& operator<<(std::ostream& os, const Mystring& rhs)
+{
+	os << rhs.str;
+	return os;
+}
+
+//overloaded extraction operator
+std::istream& operator>>(std::istream& in, Mystring& rhs)
+{
+	char* buff = new char[1000];
+	in >> buff;
+	rhs = Mystring{ buff }; // is this going to use move assignment and not copy assignment ? 
+
+	delete[] buff;
+
+	return in;
+}
