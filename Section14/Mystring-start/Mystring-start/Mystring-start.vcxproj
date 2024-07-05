@@ -24,7 +24,7 @@
     <ProjectGuid>{a12f3cb1-5116-4688-a1e4-2886e4943b64}</ProjectGuid>
     <RootNamespace>Mystringstart</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Mystring-start3</ProjectName>
+    <ProjectName>Mystring-start4</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -132,10 +132,14 @@
     <ClCompile Include="main_copy.cpp" />
     <ClCompile Include="main_move.cpp" />
     <ClCompile Include="main_operators.cpp" />
+    <ClCompile Include="main_overloadedOperatorsAsGlobalfunctions.cpp" />
     <ClCompile Include="Mystring.cpp" />
+    <ClCompile Include="Mystring2.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Header.h" />
     <ClInclude Include="Mystring.h" />
+    <ClInclude Include="Mystring2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
