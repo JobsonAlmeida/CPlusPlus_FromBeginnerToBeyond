@@ -123,6 +123,7 @@ Mystring operator-(const Mystring& obj)
 
 }
 
+
 //Concatenation
 Mystring operator+(const Mystring& lhs, const Mystring& rhs)
 {
