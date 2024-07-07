@@ -143,6 +143,8 @@ std::istream& operator>>(std::istream& in, Mystring& rhs)
 	char* buff = new char[1000];
 	in >> buff;
 	rhs = Mystring{ buff }; // is this going to use move assignment and not copy assignment ? 
+	                        // In this case move assignment is called because, while buff is a pointer and has name in the memory
+	                        // the object created through the buff property which is Mystring{buff} do not exist into the memory.  
 
 	delete[] buff;
 
