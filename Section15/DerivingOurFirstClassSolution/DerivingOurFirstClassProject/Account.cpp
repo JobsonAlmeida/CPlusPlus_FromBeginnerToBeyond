@@ -1,8 +1,9 @@
 #include "Account.h"
 #include <iostream>
 
-Account::Account()
+Account::Account(): balance { 0.0 },name{ "An Account" } 
 {
+	
 
 }
 
