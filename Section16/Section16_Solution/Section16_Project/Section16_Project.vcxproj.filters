@@ -16,10 +16,16 @@
     <Filter Include="Source Files\TheProblem">
       <UniqueIdentifier>{3149b416-9745-40a9-97ae-a31a71473317}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\BaseClassPointers">
+      <UniqueIdentifier>{d2e78861-36c8-4bd2-8f43-6bd74e8e9ec6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files\TheProblem</Filter>
+    </ClCompile>
+    <ClCompile Include="main2.cpp">
+      <Filter>Source Files\BaseClassPointers</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
