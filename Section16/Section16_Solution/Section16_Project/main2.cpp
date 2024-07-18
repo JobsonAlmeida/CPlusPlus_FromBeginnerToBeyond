@@ -1,5 +1,6 @@
 
 #include <iostream>
+#include <vector>
 
 // This class uses dynamic polymorphism for the withdraw method
 // We'll learn about virtual functions in the next video
@@ -55,7 +56,18 @@ int main()
 	p3->withdraw(1000);
 	p4->withdraw(1000);
 
+    std::cout << "\n === Array === " << std::endl;
+    Account* array[] = { p1, p2, p3, p4 };
 
+    for (auto i = 0; i < 4; i++)
+    {
+        array[i]->withdraw(1000);
+    }
+
+    std::cout << "\n === Vector ===" << std::endl;
+    std::vector<Account*> accounts{ p1,p2,p3,p4 };
+    for (auto acc_ptr : accounts)
+        acc_ptr->withdraw(1000);
 
 	std::cout << "\n === Clean up === " << std::endl;
 	delete p1;
@@ -63,7 +75,5 @@ int main()
 	delete p3;
 	delete p4;
 
-
-
-
+    return 0;
 }
