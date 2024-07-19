@@ -13,7 +13,7 @@ public:
 
 class Derived : public Base {
 public:
-    virtual void say_hello()  const override
+    virtual void say_hello()  
     {             // Notice I forgot the const 
         std::cout << "Hello - I'm a Derived class object" << std::endl;
     }
