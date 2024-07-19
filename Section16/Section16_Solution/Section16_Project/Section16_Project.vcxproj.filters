@@ -25,6 +25,9 @@
     <Filter Include="Source Files\UsingOverride">
       <UniqueIdentifier>{a0653633-d1b9-468b-a6db-1060ebffe1c4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\BaseClassReferences">
+      <UniqueIdentifier>{cf05ec5b-8e92-45b7-b688-490f5833d80f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -38,6 +41,9 @@
     </ClCompile>
     <ClCompile Include="main4.cpp">
       <Filter>Source Files\UsingOverride</Filter>
+    </ClCompile>
+    <ClCompile Include="main5.cpp">
+      <Filter>Source Files\BaseClassReferences</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
