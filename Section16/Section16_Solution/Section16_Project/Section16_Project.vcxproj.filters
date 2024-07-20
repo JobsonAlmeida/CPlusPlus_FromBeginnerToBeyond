@@ -31,6 +31,9 @@
     <Filter Include="Source Files\PureVirtualFunctions">
       <UniqueIdentifier>{b45f1709-83ed-47c4-9cd7-cd88058d75ac}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Interfaces-start">
+      <UniqueIdentifier>{f9ea3543-c925-4d0e-b5a7-44956e6cf5e5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -50,6 +53,9 @@
     </ClCompile>
     <ClCompile Include="main6.cpp">
       <Filter>Source Files\PureVirtualFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="main7.cpp">
+      <Filter>Source Files\Interfaces-start</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
