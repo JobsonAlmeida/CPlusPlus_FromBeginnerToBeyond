@@ -2,13 +2,33 @@
 // Interfaces - start
 
 #include <iostream>
+#include <string>
 
-class Account {
+class I_Printable {
+    friend std::ostream& operator<<(std::ostream& os, const I_Printable& obj);
 public:
+    virtual void print(std::ostream& os) const = 0;
+};
+
+std::ostream& operator<<(std::ostream& os, const I_Printable& obj)
+{
+   obj.print(os);
+   return os;
+}
+
+class Account: public I_Printable {
+public:
+    int var1 = 0;
     virtual void withdraw(double amount)
     {
         std::cout << "In Account::withdraw" << std::endl;
     }
+
+    virtual void print(std::ostream& os) const override
+    {
+        os << "Account display";
+    }
+
     virtual ~Account() {}
 };
 
@@ -18,6 +38,12 @@ public:
     {
         std::cout << "In Checking::withdraw" << std::endl;
     }
+
+    virtual void print(std::ostream& os) const override
+    {
+        os << "Checking display";
+    }
+
     virtual ~Checking() {}
 };
 
@@ -37,6 +63,13 @@ public:
         std::cout << "In Trust::withdraw" << std::endl;
     }
     virtual ~Trust() {}
+};
+
+class Dog : public I_Printable {
+    void print(std::ostream& os) const override
+    {
+        os << "woof woof"; 
+    }
 };
 
 int main()
