@@ -94,6 +94,19 @@ int main()
 
     delete p1;
     delete p2;
+
+
+
+    int var1 = 10;
+    int var2 = 20;
+
+    bool abc = true;
+    abc = !true;
+
     return 0;
+
+    
+
+
 }
 
