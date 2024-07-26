@@ -10,7 +10,7 @@ public:
     Test() : data{0} { std::cout << "\tTest constructor (" << data << ")" << std::endl; }
     Test(int data) : data {data} { std::cout << "\tTest constructor (" << data << ")" << std::endl; }
     int get_data() const {return data; }
-    ~Test() {std::cout << "\tTest destructor (" << data << ")" << std::endl; }
+    ~Test() {std::cout << "\tTest destructor (" << data << ")" << std::endl; } 
 };
 
 void my_deleter(Test *ptr) {
