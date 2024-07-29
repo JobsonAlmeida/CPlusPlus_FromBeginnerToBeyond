@@ -13,9 +13,10 @@ int main()
     std::cout << "Enter the gallons: ";
     std::cin >> gallons;
 
-    miles_per_gallon = static_cast<double>(miles) / gallons;
-    //std::cout << miles_per_gallon;
-    //miles_per_gallon = miles / gallons;
+    miles_per_gallon = miles / gallons;
+    //miles_per_gallon = static_cast<double>(miles) / gallons;
+    std::cout << miles_per_gallon << std::endl;
+   
     if (gallons != 0)
     {
         miles_per_gallon = static_cast<double>(miles) / gallons;
