@@ -36,6 +36,7 @@ void func_c()
 
 int main()
 {
+
     std::cout << "Starting main" << std::endl;
     try
     {
