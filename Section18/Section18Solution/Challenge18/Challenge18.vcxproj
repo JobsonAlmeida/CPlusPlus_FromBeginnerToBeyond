@@ -140,6 +140,7 @@
     <ClInclude Include="Account_Util.h" />
     <ClInclude Include="Checking_Account.h" />
     <ClInclude Include="IllegalBalanceException.h" />
+    <ClInclude Include="InsufficientFundsException.h" />
     <ClInclude Include="I_Printable.h" />
     <ClInclude Include="Savings_Account.h" />
     <ClInclude Include="Trust_Account.h" />
