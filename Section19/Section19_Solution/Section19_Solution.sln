@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Manip_Integer", "Manip_Inte
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Manip_Floating", "Manip_Floating\Manip_Floating.vcxproj", "{BC240578-018C-40F8-9010-DDA9C7C6A1D9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Manip_Fields", "Manip_Fields\Manip_Fields.vcxproj", "{A61C3CFC-BB32-46AC-BB09-1F9EC61D6680}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{BC240578-018C-40F8-9010-DDA9C7C6A1D9}.Release|x64.Build.0 = Release|x64
 		{BC240578-018C-40F8-9010-DDA9C7C6A1D9}.Release|x86.ActiveCfg = Release|Win32
 		{BC240578-018C-40F8-9010-DDA9C7C6A1D9}.Release|x86.Build.0 = Release|Win32
+		{A61C3CFC-BB32-46AC-BB09-1F9EC61D6680}.Debug|x64.ActiveCfg = Debug|x64
+		{A61C3CFC-BB32-46AC-BB09-1F9EC61D6680}.Debug|x64.Build.0 = Debug|x64
+		{A61C3CFC-BB32-46AC-BB09-1F9EC61D6680}.Debug|x86.ActiveCfg = Debug|Win32
+		{A61C3CFC-BB32-46AC-BB09-1F9EC61D6680}.Debug|x86.Build.0 = Debug|Win32
+		{A61C3CFC-BB32-46AC-BB09-1F9EC61D6680}.Release|x64.ActiveCfg = Release|x64
+		{A61C3CFC-BB32-46AC-BB09-1F9EC61D6680}.Release|x64.Build.0 = Release|x64
+		{A61C3CFC-BB32-46AC-BB09-1F9EC61D6680}.Release|x86.ActiveCfg = Release|Win32
+		{A61C3CFC-BB32-46AC-BB09-1F9EC61D6680}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
